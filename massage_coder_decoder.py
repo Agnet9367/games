@@ -31,4 +31,4 @@ if code_decode == 1:
 
 else:
  massage = input("Paste the coded massage here to decode it: \n") 
-print("Step through every second character: ", massage[::2])
+print("Decoded massage: ", massage[::2])

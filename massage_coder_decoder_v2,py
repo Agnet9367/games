@@ -31,13 +31,21 @@ if code_decode == 1:
     r14 = random.choice(alph)
     r15 = random.choice(alph)
     r16 = random.choice(alph)
+    r17 = random.choice(alph)
+    r18 = random.choice(alph)
+    r19 = random.choice(alph)
+    r20 = random.choice(alph)
+    r21 = random.choice(alph)
+    r22 = random.choice(alph)
+    r23 = random.choice(alph)
+    r24 = random.choice(alph)
     
     method = random.randint(1,5)
     if method == 1:
         print("This is your coded massage: ",a1 + r1 + a2 + r2 + a3 + r3 + a4 + r4 + a5 + r5 + a6 + r6 + a7 + r7 + a8 + r8 + a9 + r9 + a10 + r10 + a11 + r11 + a12 + r12,"a")
     elif method == 2:
-        print("This is your coded massage: ",a1 + r1 + a2 + r2 + a3 + r3 + a4 + r4 + a5 + r5 + a6 + r6 + a7 + r7 + a8 + r8 + a9 + r9 + a10 + r10 + a11 + r11 + a12 + r12,"b")
-    elif method == 3:
+        print("This is your coded massage: ",a1 + r1 + r2 + a2 + r3 + r4 + a3 + r5 + r6 + a4 + r5 + a6 + r6 + a6 + r7 + a5 + a7 + a9 + a6 + a10 + r10 + a7 + r11 + a12 + a8,"b")
+    elif method == 3: #left here to finish this colums
         print("This is your coded massage: ",a1 + r1 + a2 + r2 + a3 + r3 + a4 + r4 + a5 + r5 + a6 + r6 + a7 + r7 + a8 + r8 + a9 + r9 + a10 + r10 + a11 + r11 + a12 + r12,"c")
     elif method == 4:
         print("This is your coded massage: ",a1 + r1 + a2 + r2 + a3 + r3 + a4 + r4 + a5 + r5 + a6 + r6 + a7 + r7 + a8 + r8 + a9 + r9 + a10 + r10 + a11 + r11 + a12 + r12,"d")
@@ -47,5 +55,25 @@ if code_decode == 1:
 #____________________________________________________________________________________________________________________________________________
 
 else:
-        massage = input("Paste the coded massage here to decode it: \n") 
-        print("Step through every second character: ", massage[::2])
+        text = input("Paste the coded massage here to decode it: \n") 
+
+        if text[-1] == "a":
+             print("a")
+        elif text[-1] == "b":
+             print("b")
+        elif text[-1] == "c":
+             print("c")
+        elif text[-1] == "d":
+             print("d")
+        else:
+             print("e")
+
+
+             
+
+             
+
+             
+             
+       
+       
