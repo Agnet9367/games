@@ -79,7 +79,7 @@ chance = random.randint(1, 6)
 if chance == 1:
     
 elif chance == 2:
-
+    
 elif chance == 3:
 
 elif chance == 4:
