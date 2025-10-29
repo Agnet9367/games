@@ -3,7 +3,7 @@ import random; import time; import math
 coins = 10
 betting_amount = 1
 print("---Gambling---")
-user_input = input(f"What game do you want to play you have {coins} coins!\n\nslot machine\n")
+user_input = input(f"What game do you want to play you have {coins} coins!\nslot machine\n")
 if user_input == "slot machine":
     while True:
         user_input_slot = input(f"Type 'start' to spin the slot for {betting_amount} coin, you have {coins} coins!\nType 'change' if you want to change betting amount\nType 'exit' if you want to exit\n")
