@@ -35,6 +35,8 @@ if user_input == "slot machine":
                 print("Error")
             else:        
                 betting_amount = wanted_betting_amount
+        else:
+            print("Error")
 
 else:
     print("Error")
