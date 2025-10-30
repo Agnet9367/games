@@ -22,11 +22,9 @@ if user_input == "slot machine":
             for i in range(25):
                 slot1fake = random.choice(slots);slot2fake = random.choice(slots);slot3fake = random.choice(slots)
                 print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "|", slot1, "|", slot2, "|", slot3fake, "|" );time.sleep(0.1)
-            print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", slot1, slot2, slot3)
+            print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "|", slot1, "|", slot2, "|", slot3, "|" "\n")
             if slot1 == slot2 == slot3:
-                print("You won your bet amount times 3!"); dollars += betting_amount * 3
-            elif slot1 == slot2 or slot1 == slot3 or slot2 == slot3:
-                print("You won your bet amount times 2!"); dollars += betting_amount *2
+                print("You won your bet amount times 2!"); dollars += betting_amount * 2
             else:
                 print("You didn't win!")
         elif user_input_slot == "change":
@@ -39,10 +37,11 @@ if user_input == "slot machine":
             print("Error")
 
 elif user_input == "roulette":
+    num1 = 1;num2 = 2;num3 = 3;num4 = 4;num5 = 5;num6 = 6;num7 = 7;num8 = 8
     while True:
         user_input_roulette = input(f"Type 'start' to spin the roulette for {betting_amount} dollar(s), you have {dollars} dollars!\nType 'change' if you want to change betting amount\nType 'number' to change the number\nType 'exit' if you want to exit\n")
         if user_input_roulette == "start":
-            print("1    2    3    4    5\n\n                    6")
+            print(num1,    num2,    num3,"\n\n",num8,         num4,  "<---\n\n",num7,    num6,    num5,)
 
 
 else:
