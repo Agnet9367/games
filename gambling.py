@@ -40,7 +40,11 @@ if user_input == "slot machine":
 
 elif user_input == "roulette":
     while True:
-            user_input_slot = input(f"Type 'start' to spin the roulette for {betting_amount} dollar(s), you have {dollars} dollars!\nType 'change' if you want to change betting amount\nType 'number' to change the number\nType 'exit' if you want to exit\n")
+        user_input_roulette = input(f"Type 'start' to spin the roulette for {betting_amount} dollar(s), you have {dollars} dollars!\nType 'change' if you want to change betting amount\nType 'number' to change the number\nType 'exit' if you want to exit\n")
+        if user_input_roulette == "start":
+            print("1    2    3    4    5\n\n                    6")
+
 
 else:
     print("Error")
+
