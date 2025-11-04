@@ -41,7 +41,23 @@ elif user_input == "roulette":
     while True:
         user_input_roulette = input(f"Type 'start' to spin the roulette for {betting_amount} dollar(s), you have {dollars} dollars!\nType 'change' if you want to change betting amount\nType 'number' to change the number\nType 'exit' if you want to exit\n")
         if user_input_roulette == "start":
-            print(num1,    num2,    num3,"\n\n",num8,         num4,  "<---\n\n",num7,    num6,    num5,)
+            for e in range(25):
+                num1 += 1;num2 += 1;num3 += 1;num4 += 1;num5 += 1;num6 += 1;num7 += 1;num8 += 1;
+                if num1 == 8: num1 = 1
+                if num2 == 8: num2 = 1
+                if num3 == 8: num3 = 1
+                if num4 == 8: num4 = 1
+                if num5 == 8: num5 = 1
+                if num6 == 8: num6 = 1
+                if num7 == 8: num7 = 1
+                if num8 >= 8: num8 = 1
+
+                time.sleep(0.25)
+                print("\n\n\n\n\n\n\n\n\n\n\n\n")
+                print("", num1, "  ", num2, "  ", num3)
+                print("\n", num8, "  ", " ", "  ", num4)
+                print("\n", num7, "  ", num6, "  ", num5)
+                
 
 
 else:
